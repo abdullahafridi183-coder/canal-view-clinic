@@ -54,7 +54,7 @@ async function submitAppointmentToGoogleSheet(data) {
     return { success: true, demo: true };
   }
 
-  const response = await fetch(GOOGLE_SCRIPT_URL, {
+  const response = await fetch(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec, {
     method: "POST",
     body: JSON.stringify({
       type: "appointment",
@@ -81,7 +81,7 @@ async function submitFeedbackToGoogleSheet(data) {
     return { success: true, demo: true };
   }
 
-  const response = await fetch(GOOGLE_SCRIPT_URL, {
+  const response = await fetch(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec, {
     method: "POST",
     body: JSON.stringify({
       type: "feedback",
