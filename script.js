@@ -48,13 +48,13 @@ function validConfig(value) {
 // GOOGLE SHEETS: APPOINTMENTS
 // ===============================
 async function submitAppointmentToGoogleSheet(data) {
-  if (!validConfig(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec)) {
+  if (!validConfig()) {
     // Website still works as a demo until the Apps Script URL is added.
     console.warn("Google Sheets is not connected yet.");
     return { success: true, demo: true };
   }
 
-  const response = await fetch(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec, {
+  const response = await fetch(, {
     method: "POST",
     body: JSON.stringify({
       type: "appointment",
@@ -76,12 +76,12 @@ async function submitAppointmentToGoogleSheet(data) {
 // GOOGLE SHEETS: FEEDBACK
 // ===============================
 async function submitFeedbackToGoogleSheet(data) {
-  if (!validConfig(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec)) {
+  if (!validConfig()) {
     console.warn("Google Sheets is not connected yet.");
     return { success: true, demo: true };
   }
 
-  const response = await fetch(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec, {
+  const response = await fetch(, {
     method: "POST",
     body: JSON.stringify({
       type: "feedback",
