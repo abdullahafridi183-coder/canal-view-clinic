@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Canal View Diagnostic Center - Quality diagnostic care in Old Muslim Town, Lahore.">
+  <title>Canal View Diagnostic Center | Lahore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Canal View Diagnostic Center home">
+        <span class="brand-mark">CV</span>
+        <span>
+          <strong>Canal View</strong>
+          <small>Diagnostic Center</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointments</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">Trusted Diagnostic Care in Lahore</span>
+          <h1>Quality Diagnostic Care <span>You Can Trust</span></h1>
+          <p>
+            Professional diagnostic and healthcare services with a patient-focused
+            approach at Canal View Diagnostic Center.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#appointment">Book an Appointment</a>
+            <a class="btn btn-light" href="tel:+924235863341">Call Now</a>
+          </div>
+          <div class="hero-trust">
+            <span>★ 3.5/5</span>
+            <span>60 Google Reviews</span>
+            <span>Old Muslim Town, Lahore</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-icon">✚</div>
+          <h3>Patient-first care</h3>
+          <p>Convenient appointment requests and easy access to clinic contact information.</p>
+          <a href="#contact">View contact details →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <span class="section-tag">About Us</span>
+          <h2>Care designed around your health</h2>
+          <p class="lead">
+            Canal View Diagnostic Center is located in Old Muslim Town, Lahore,
+            providing accessible diagnostic and healthcare services for patients.
+          </p>
+          <p>
+            Our website makes it easy for patients to request an appointment,
+            share feedback, and find the clinic's contact information from any device.
+          </p>
+        </div>
+        <div class="about-panel">
+          <div class="stat"><strong>3.5/5</strong><span>Google rating</span></div>
+          <div class="stat"><strong>60</strong><span>Google reviews</span></div>
+          <div class="stat"><strong>Lahore</strong><span>Convenient location</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Our Services</span>
+          <h2>Healthcare and diagnostic services</h2>
+          <p>Explore the services available through our clinic.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card"><div class="service-icon">⌁</div><h3>Diagnostic Testing</h3><p>Professional diagnostic testing support for patient healthcare needs.</p></article>
+          <article class="service-card"><div class="service-icon">＋</div><h3>Laboratory Services</h3><p>Convenient access to laboratory-related healthcare services.</p></article>
+          <article class="service-card"><div class="service-icon">◉</div><h3>Medical Screening</h3><p>Screening support to help patients stay informed about their health.</p></article>
+          <article class="service-card"><div class="service-icon">♥</div><h3>Health Checkups</h3><p>Routine health checkup services for preventive care.</p></article>
+          <article class="service-card"><div class="service-icon">♙</div><h3>General Consultation</h3><p>Request an appointment for general healthcare consultation.</p></article>
+          <article class="service-card"><div class="service-icon">✓</div><h3>Preventive Healthcare</h3><p>Healthcare support focused on prevention and early attention to health needs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="doctors">
+      <div class="container section-heading">
+        <span class="section-tag">Doctors & Care Team</span>
+        <h2>Professional care starts with the right appointment</h2>
+        <p>
+          Doctor names and specialties were not supplied, so this section avoids inventing
+          medical staff. Select or enter the appropriate doctor when booking.
+        </p>
+        <a class="text-link" href="#appointment">Request an appointment →</a>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="appointment">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <span class="section-tag">Appointments</span>
+          <h2>Request your appointment</h2>
+          <p>Complete the form and your request can be sent to your Google Sheet after you add the Apps Script URL.</p>
+          <div class="info-note">
+            <strong>Clinic</strong>
+            <span>Canal View Diagnostic Center</span>
+            <span>+92 42 35863341</span>
+          </div>
+        </div>
+
+        <form class="form-card" id="appointmentForm" novalidate>
+          <div class="form-grid">
+            <label>Patient Name *<input name="name" type="text" required placeholder="Your full name"></label>
+            <label>Phone Number *<input name="phone" type="tel" required placeholder="+92..."></label>
+            <label>Email *<input name="email" type="email" required placeholder="you@example.com"></label>
+            <label>Department / Service *
+              <select name="department" required>
+                <option value="">Select a service</option>
+                <option>Diagnostic Testing</option>
+                <option>Laboratory Services</option>
+                <option>Medical Screening</option>
+                <option>Health Checkups</option>
+                <option>General Consultation</option>
+                <option>Preventive Healthcare</option>
+              </select>
+            </label>
+            <label>Preferred Doctor
+              <input name="doctor" type="text" placeholder="Doctor name, if known">
+            </label>
+            <label>Preferred Date *<input name="date" type="date" required></label>
+            <label>Preferred Time *<input name="time" type="time" required></label>
+            <label class="full">Message
+              <textarea name="message" rows="4" placeholder="Tell us anything important about your appointment request"></textarea>
+            </label>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Submit Appointment</button>
+          <p class="form-status" id="appointmentStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container review-layout">
+        <div>
+          <span class="section-tag">Patient Feedback</span>
+          <h2>Share your experience</h2>
+          <p class="lead">Your feedback helps the clinic understand the patient experience.</p>
+
+          <div class="rating-card">
+            <div class="rating-number">3.5</div>
+            <div>
+              <div class="stars" aria-label="3.5 out of 5 stars">★ ★ ★ ★ ☆</div>
+              <strong>Google rating</strong>
+              <span>Based on 60 reviews</span>
+            </div>
+          </div>
+
+          <a class="btn btn-outline" id="googleReviewBtn" href="#" target="_blank" rel="noopener">
+            View Google Reviews
+          </a>
+        </div>
+
+        <form class="form-card" id="feedbackForm" novalidate>
+          <h3>Send feedback</h3>
+          <label>Name *<input name="name" type="text" required placeholder="Your name"></label>
+          <label>Email *<input name="email" type="email" required placeholder="you@example.com"></label>
+
+          <fieldset class="rating-input">
+            <legend>Rating *</legend>
+            <div class="star-picker" id="starPicker" aria-label="Choose rating">
+              <button type="button" data-rating="1" aria-label="1 star">★</button>
+              <button type="button" data-rating="2" aria-label="2 stars">★</button>
+              <button type="button" data-rating="3" aria-label="3 stars">★</button>
+              <button type="button" data-rating="4" aria-label="4 stars">★</button>
+              <button type="button" data-rating="5" aria-label="5 stars">★</button>
+            </div>
+            <input type="hidden" name="rating" id="ratingValue" required>
+          </fieldset>
+
+          <label>Feedback Message *<textarea name="message" rows="5" required placeholder="Write your review or feedback"></textarea></label>
+          <button class="btn btn-primary btn-block" type="submit">Submit Feedback</button>
+          <p class="form-status" id="feedbackStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">Contact</span>
+          <h2>Find and contact the clinic</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="contact-icon">⌖</span>
+            <h3>Address</h3>
+            <p>4 A/1 Noon Avenue,<br>Old Muslim Town,<br>Lahore, Pakistan</p>
+            <a class="text-link" id="mapsBtn" href="#" target="_blank" rel="noopener">Open Google Maps →</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">☎</span>
+            <h3>Phone</h3>
+            <p>+92 42 35863341</p>
+            <a class="text-link" href="tel:+924235863341">Call the clinic →</a>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">✉</span>
+            <h3>Email</h3>
+            <p>cvdc.626@gmail.com</p>
+            <a class="text-link" href="mailto:cvdc.626@gmail.com">Send an email →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float disabled" id="whatsappBtn" href="#" aria-label="WhatsApp" title="WhatsApp number not configured">WA</a>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">CV</span><span><strong>Canal View</strong><small>Diagnostic Center</small></span></a>
+        <p>Quality diagnostic care you can trust in Old Muslim Town, Lahore.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#appointment">Appointments</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+924235863341">+92 42 35863341</a>
+        <a href="mailto:cvdc.626@gmail.com">cvdc.626@gmail.com</a>
+        <a href="#contact">4 A/1 Noon Avenue, Lahore</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Canal View Diagnostic Center. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
