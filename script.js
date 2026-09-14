@@ -3,7 +3,7 @@
 // ===============================
 // Paste your Google Apps Script Web App URL here after creating it.
 // Example: https://script.google.com/macros/s/XXXXXXXX/exec
-const GOOGLE_SCRIPT_URL = "ADD_GOOGLE_APPS_SCRIPT_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec";
 
 // Add the VERIFIED Google review URL here.
 // Do not invent or guess this URL.
