@@ -3,7 +3,7 @@
 // ===============================
 // Paste your Google Apps Script Web App URL here after creating it.
 // Example: https://script.google.com/macros/s/XXXXXXXX/exec
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec";
+const GOOGLE_SCRIPT_URL = "ADD_GOOGLE_APPS_SCRIPT_URL_HERE";
 
 // Add the VERIFIED Google review URL here.
 // Do not invent or guess this URL.
@@ -12,7 +12,7 @@ const GOOGLE_REVIEW_URL = "ADD_GOOGLE_REVIEW_URL_HERE";
 // Add a VERIFIED WhatsApp/mobile number in international format WITHOUT + or spaces.
 // Example: "923001234567"
 // Do not put the clinic landline here unless it is actually registered on WhatsApp.
-const WHATSAPP_NUMBER = "923338383934";
+const WHATSAPP_NUMBER = "ADD_VERIFIED_WHATSAPP_NUMBER_HERE";
 
 // Add the VERIFIED Google Maps URL here.
 // Do not invent or guess this URL.
@@ -48,13 +48,13 @@ function validConfig(value) {
 // GOOGLE SHEETS: APPOINTMENTS
 // ===============================
 async function submitAppointmentToGoogleSheet(data) {
-  if (!validConfig()) {
+  if (!validConfig(GOOGLE_SCRIPT_URL)) {
     // Website still works as a demo until the Apps Script URL is added.
     console.warn("Google Sheets is not connected yet.");
     return { success: true, demo: true };
   }
 
-  const response = await fetch(, {
+  const response = await fetch(GOOGLE_SCRIPT_URL, {
     method: "POST",
     body: JSON.stringify({
       type: "appointment",
@@ -76,12 +76,12 @@ async function submitAppointmentToGoogleSheet(data) {
 // GOOGLE SHEETS: FEEDBACK
 // ===============================
 async function submitFeedbackToGoogleSheet(data) {
-  if (!validConfig()) {
+  if (!validConfig(GOOGLE_SCRIPT_URL)) {
     console.warn("Google Sheets is not connected yet.");
     return { success: true, demo: true };
   }
 
-  const response = await fetch(, {
+  const response = await fetch(GOOGLE_SCRIPT_URL, {
     method: "POST",
     body: JSON.stringify({
       type: "feedback",
