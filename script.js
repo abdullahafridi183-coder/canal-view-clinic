@@ -12,7 +12,7 @@ const GOOGLE_REVIEW_URL = "ADD_GOOGLE_REVIEW_URL_HERE";
 // Add a VERIFIED WhatsApp/mobile number in international format WITHOUT + or spaces.
 // Example: "923001234567"
 // Do not put the clinic landline here unless it is actually registered on WhatsApp.
-const WHATSAPP_NUMBER = "ADD_VERIFIED_WHATSAPP_NUMBER_HERE";
+const WHATSAPP_NUMBER = "923338383934";
 
 // Add the VERIFIED Google Maps URL here.
 // Do not invent or guess this URL.
