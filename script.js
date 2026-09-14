@@ -48,7 +48,7 @@ function validConfig(value) {
 // GOOGLE SHEETS: APPOINTMENTS
 // ===============================
 async function submitAppointmentToGoogleSheet(data) {
-  if (!validConfig(GOOGLE_SCRIPT_URL)) {
+  if (!validConfig(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec)) {
     // Website still works as a demo until the Apps Script URL is added.
     console.warn("Google Sheets is not connected yet.");
     return { success: true, demo: true };
@@ -76,7 +76,7 @@ async function submitAppointmentToGoogleSheet(data) {
 // GOOGLE SHEETS: FEEDBACK
 // ===============================
 async function submitFeedbackToGoogleSheet(data) {
-  if (!validConfig(GOOGLE_SCRIPT_URL)) {
+  if (!validConfig(https://script.google.com/macros/s/AKfycbybCDY89cKOlhhoQmQMeX2MceQGhDVBfAKUJXGk4ic55Axtq4h_vHjbYyfKxxhBKbR3YA/exec)) {
     console.warn("Google Sheets is not connected yet.");
     return { success: true, demo: true };
   }
